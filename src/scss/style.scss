@@ -1,0 +1,150 @@
+@import './reset.scss';
+
+
+.weather {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    &__card {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #1d1c1c;
+    }
+}
+
+.nav {
+    width: 100%;
+    margin: 0 auto 60px;
+    padding-top: 50px;
+    &__content {
+        display: flex;
+        justify-content: center;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item {
+        font-size: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: #555;
+        }
+    }
+}
+
+.time {
+    width: 100%;
+    margin: 0 auto;
+    &__card {
+        display: flex;
+        justify-content: center;
+        max-width: 1920px;
+        margin: 0 auto;
+        font-size: 50px;
+    }
+}
+
+.weather {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #1d1c1c;
+    &__search__container {
+        margin-bottom: 30px;
+    }
+    
+    &__search {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    &__input {
+        padding: 8px 16px;
+        background-color: #414141;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-radius: 16px;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+            background-color: #5e5e5e;
+        }
+    }
+    
+    &__btn {
+        padding: 8px 16px;
+        border: 1px solid #000;
+        border-radius: 16px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        &:hover {
+            background-color: #5e5e5e;
+            color: #fff;
+        }
+    }
+    
+    
+    &__input__error {
+        padding-left: 10px;
+        color: red;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+        color: #fff;
+    }
+    
+    &__info__details {
+        display: flex;
+        font-size: 24px;
+        
+    }
+    
+    &__info__details__left-col {
+        margin-right: 80px;
+        text-align: center;
+    }
+
+    &__info__details__right-col {
+        text-align: center;
+    }
+
+    &__temp {
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+    
+    &__cloud {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    
+    &__city {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 60px;
+    }
+}
