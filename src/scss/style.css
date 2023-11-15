@@ -91,6 +91,7 @@ h4 {
   justify-content: space-between;
 }
 .weather__input {
+  margin-right: 4px;
   padding: 8px 16px;
   background-color: #414141;
   color: #fff;
